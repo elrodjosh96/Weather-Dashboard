@@ -1,0 +1,35 @@
+/* :root {
+    --primary: #ccdad1;
+    --secondary: #9caea9;
+    --tertiary: #788585;
+    --light-dark: #6f6866;
+    --dark: #030303;
+    --border-radius: .3rem;
+  } */
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.citysearchcard {
+    padding: 12px;
+    font-size: xx-large;
+}
+
+header {
+    background-color:  darkgreen;
+    box-sizing: border-box;
+}
+
+.headertitle {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+  font-weight: 800;
+  margin: 0;
+  color: var(--dark); 
+  line-height: 2;
+}
