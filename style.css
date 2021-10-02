@@ -17,6 +17,11 @@
     font-size: xx-large;
 }
 
+.btn, .form-input {
+  display: block;
+  width: 250px;
+}
+
 header {
     background-color:  darkgreen;
     box-sizing: border-box;
