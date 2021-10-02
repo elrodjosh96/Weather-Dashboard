@@ -13,21 +13,27 @@
 
 <body>
   <header class="headertitle">
-    <h1>Weather Dashboard(make this a gradient background like mock-up)</h1>
+    <h1>Weather Dashboard</h1>
   </header>
-
-
-  <main class="flex-row justify-space-between">
-    <div class="col-12 col-md-4">
-
-      <div class="citysearchcard">
-        <h2 class="card-header text-uppercase">Search for a City:</h2>
+  <main>
+    <div class="search-card w-50">
+      <div class="card-body">
+        <h1 class="card-title">Search for a City:</h1>
         <form id="user-form" class="card-body">
           <input name="citysearch" id="citysearch" type="text" autofocus="true" class="form-input" />
           <button type="submit" class="btn">Search</button>
         </form>
       </div>
+    </div>
   </main>
+
+  <section class="city-display-card">
+    <div class="card bg-dark text-white">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text">Last updated 3 mins ago</p>
+    </div>
+  </section>
 
   <script src="./script.js"></script>
 </body>

@@ -1,20 +1,15 @@
-/* :root {
-    --primary: #ccdad1;
-    --secondary: #9caea9;
-    --tertiary: #788585;
-    --light-dark: #6f6866;
-    --dark: #030303;
-    --border-radius: .3rem;
-  } */
-
   * {
     box-sizing: border-box;
     margin: 0;
 }
 
-.citysearchcard {
+.search-card {
     padding: 12px;
     font-size: xx-large;
+    border: darkgrey 6px solid;
+    width: fit-content;
+    margin: 4px;
+    
 }
 
 .btn, .form-input {
@@ -23,7 +18,7 @@
 }
 
 header {
-    background-color:  darkgreen;
+  background: linear-gradient(70deg, blue, pink);
     box-sizing: border-box;
 }
 
@@ -37,4 +32,11 @@ h1 {
   margin: 0;
   color: var(--dark); 
   line-height: 2;
+}
+
+.city-display-card {
+  display: flex;
+  justify-content: flex-end;
+  border: darkgrey 6px solid;
+  margin: 4px;
 }
