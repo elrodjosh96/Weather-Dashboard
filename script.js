@@ -1,5 +1,5 @@
 var cityWeather = 'Chicago'
-var weathAPI = 'http://api.openweathermap.org/data/2.5/weather?q='+ cityWeather + '&appid=a55cbfd2e3c5718ac038ceb575faa02d'
+var weathAPI = 'https://api.openweathermap.org/data/2.5/weather?q='+ cityWeather + '&appid=a55cbfd2e3c5718ac038ceb575faa02d'
 fetch(weathAPI) 
     .then(function (response) {
         return response.json();
@@ -16,7 +16,7 @@ document.getElementById('search-btn').addEventListener('click', function(event){
 })
 
 function APIcall(cityWeather) {
-    var weathAPI = 'http://api.openweathermap.org/data/2.5/weather?q='+ cityWeather + '&appid=a55cbfd2e3c5718ac038ceb575faa02d'
+    var weathAPI = 'https://api.openweathermap.org/data/2.5/weather?q='+ cityWeather + '&appid=a55cbfd2e3c5718ac038ceb575faa02d'
 fetch(weathAPI) 
     .then(function (response) {
         return response.json();
