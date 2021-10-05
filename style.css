@@ -26,3 +26,18 @@ header {
   margin: 4px;
   width: fit-content;
 }
+
+#smallcard {
+  display: flex;
+  flex-direction: row;
+}
+
+#weatherinfo {
+  display: flex;
+  flex-direction: column;
+}
+
+#weatherdetails {
+  display: flex;
+  flex-direction: column;
+}
