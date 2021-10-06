@@ -27,7 +27,7 @@ header {
   width: fit-content;
 }
 
-#smallcard {
+/* #smallcard {
   display: flex;
   flex-direction: row;
 }
@@ -40,4 +40,4 @@ header {
 #weatherdetails {
   display: flex;
   flex-direction: column;
-}
+} */
