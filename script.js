@@ -1,5 +1,5 @@
 var cityWeather = 'Atlanta'
-var weathAPI = 'https://api.openweathermap.org/data/2.5/weather?q=' + cityWeather + '&appid=a55cbfd2e3c5718ac038ceb575faa02d'
+var weathAPI = 'https://api.openweathermap.org/data/2.5/weather?q=' + cityWeather + '&units=imperial&appid=a55cbfd2e3c5718ac038ceb575faa02d'
 
 // function getWeather () {
 //   fetch(weathAPI) 
@@ -21,7 +21,7 @@ document.getElementById('search-btn').addEventListener('click', function (event)
 })
 
 function APIcall(cityWeather) {
-  var weathAPI = 'https://api.openweathermap.org/data/2.5/weather?q=' + cityWeather + '&appid=a55cbfd2e3c5718ac038ceb575faa02d'
+  var weathAPI = 'https://api.openweathermap.org/data/2.5/weather?q=' + cityWeather + '&units=imperial&appid=a55cbfd2e3c5718ac038ceb575faa02d'
   fetch(weathAPI)
     .then(function (response) {
       return response.json();
@@ -30,7 +30,7 @@ function APIcall(cityWeather) {
       console.log(data)
       var lattitude = data.coord.lat
       var longitude = data.coord.lon
-      var latlongUrl = 'https://api.openweathermap.org/data/2.5/onecall?lat=' + lattitude + '&lon=' + longitude + '&exclude=minutely,alerts,hourly&appid=a55cbfd2e3c5718ac038ceb575faa02d'
+      var latlongUrl = 'https://api.openweathermap.org/data/2.5/onecall?lat=' + lattitude + '&lon=' + longitude + '&units=imperial&exclude=minutely,alerts,hourly&appid=a55cbfd2e3c5718ac038ceb575faa02d'
       fetch(latlongUrl)
         .then(function (response) {
           return response.json();
@@ -62,9 +62,9 @@ function CardData(data) {
   console.log(data);
   for (var i = 0; i < cityWeather.length; i++) {
     var dayTemp = data.daily[i].temp.day
-    $(`#day-temp-${i+1}`).text(dayTemp);
-    $(`#day-humid-${i+1}`).text(data.daily[i].humidity)
-    $(`#day-wind-${i+1}`).text(data.daily[i].wind_speed)
+    $(`#day-temp-${i+1}`).text(dayTemp + "°F");
+    $(`#day-humid-${i+1}`).text(data.daily[i].humidity + "%")
+    $(`#day-wind-${i+1}`).text(data.daily[i].wind_speed + " mph")
 
 
     if ( data.daily[5].weather[0].main == "Clouds") {
